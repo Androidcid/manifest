@@ -21,12 +21,16 @@
   <default revision="refs/tags/android-5.0.1_r1"
            remote="aosp"
            sync-j="4" />
-
-  <project path="manifest" name="AOSPA-legacy/manifest" remote="github" revision="lollipop" />
+  
+  <project path="manifest" name="Androidcid/manifest" remote="github" revision="lollipop" />
   <project path="build" name="AOSPA-legacy/android_build" remote="github" revision="lollipop" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  
+  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="cm" revision="cm-12.0"/>
+  <project name="Androidcid/android_device_lge_d850" path="device/lge/d850" remote="github" revision="lollipop"/>
+  <project name="Androidcid/android_device_lge_g3-common" path="device/lge/g3-common" remote="github" revision="lollipop"/>
+  <project name="CyanogenMod/android_kernel_lge_g3" path="kernel/lge/g3" remote="github" revision="lollipop"/>
+  <project name="proprietary_vendor_lge" path="vendor/lge" remote="blobs" revision="cm-12.0"/>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" remote="cm" revision="cm-12.0" groups="pdk" />
   <project path="bionic" name="AOSPA-legacy/android_bionic" remote="github" revision="lollipop" groups="pdk" />
@@ -528,7 +532,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  <project path="vendor/pa" name="AOSPA-legacy/android_vendor_pa" remote="github" revision="lollipop" >
+  <project path="vendor/pa" name="Androidcid/android_vendor_pa" remote="github" revision="lollipop" >
     <copyfile src="build.sh" dest="rom-build.sh" />
   </project>
 
